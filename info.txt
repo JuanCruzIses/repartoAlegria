@@ -1,0 +1,6 @@
+VERDE: #42ed9e
+VERDE2: #42ed9e
+
+bree serif
+passion one
+titan one

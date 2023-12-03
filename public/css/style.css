@@ -1,0 +1,83 @@
+.adjustText{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;    
+    max-height: 45px;
+}
+
+.mpButton{
+    width: 50%;
+    margin: auto;
+}
+
+.cardCategory{
+    background: rgb(0 0 0 / 20%)
+}
+
+.carouselPadre > div{
+    height: 100%;
+    margin: auto;
+}
+
+.labelContact label{
+    top: -15px;
+    font-size: 14px
+}
+
+.labelContact input{
+    height: 45px!important;
+    min-height: 45px!important;
+}
+
+.labelContact2 label{
+    top: -8px;
+    font-size: 14px
+}
+
+.carouselPadre a{
+    display: none;
+}
+
+.spanTitle{
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 100;
+}
+
+.optionButtonsProducts{
+    box-shadow: 0px 0px 1px;
+}
+
+.cart-button:hover > svg{
+    color: white;
+}
+
+@media(min-width:424px){
+    .containerLogin{
+        height: auto;
+    }
+}
+
+@media(min-width: 768px){
+    .tableCart{
+        width: 95%!important;
+        margin: auto;
+    }
+
+    .mdStyleH4{
+        height: fit-content;
+    }
+
+    .navButton:hover{
+        background-color: #249A76;
+        border: 2px solid black;
+    }
+}
+
+@media(min-width: 1024px){
+    /* main{
+        padding-top: 29vh!important;
+    } */
+}
+
+
