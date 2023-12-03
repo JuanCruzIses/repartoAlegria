@@ -26,14 +26,13 @@ const preference = new preference(client);
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("../../client/html-js"));
+// app.use(express.static("../../client/html-js"));
 app.use(cors());
 app.get("/", function (req, res) {
 	res.status(200).sendFile("index.html");
 });
 
 app.post("/create_preference", (req, res) => {
-	// console.log(req.body)
 	let newPreference = {
 		items: [
 			{
