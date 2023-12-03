@@ -45,12 +45,12 @@ app.post("/create_preference", (req, res) => {
 				quantity: 1 
 			}
 		],
-		// back_urls: {
-		// 	"success": "http://localhost:8080/feedback",
-		// 	"failure": "http://localhost:8080/feedback",
-		// 	"pending": "http://localhost:8080/feedback"
-		// },
-		// auto_return: "approved",
+		back_urls: {
+			"success": "http://localhost:8080/feedback",
+			"failure": "http://localhost:8080/feedback",
+			"pending": "http://localhost:8080/feedback"
+		},
+		auto_return: "approved",
 	};
 	preference.create(newPreference)
 		.then(function (response) {
