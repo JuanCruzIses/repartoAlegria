@@ -4,11 +4,11 @@ import { NextResponse } from "next/server";
 
 export const dynamic = 'force-dynamic'
 
-export async function GET(req){
+export async function GET(){
     try {
         await connectToDB();
-
         const extractAllProducts = await Product.find({});
+        console.log(extractAllProducts)
         
         if(extractAllProducts.length > 0){
             return NextResponse.json({
@@ -23,7 +23,6 @@ export async function GET(req){
             });
         }
     } catch (error) {
-        console.error('Error al obtener productos:', error);
         return NextResponse.json({
             success: false,
             status: 500, // Código de respuesta HTTP 500 para errores internos del servidor
