@@ -1,6 +1,6 @@
 export const registerNewUser = async (FormData)=>{
     try{
-        const response = await fetch('/api/register',{
+        const response = await fetch('https://repartoalegria-backend.onrender.com/api/users/register',{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 export const addNewProduct = async(formData) =>{
     try{
-        const response = await fetch('/api/admin/addProducts', {
+        const response = await fetch('https://repartoalegria-backend.onrender.com/api/products/create', {
             method: "POST",
             headers: {
                 "content-type" : "application/json",
@@ -23,7 +23,7 @@ export const addNewProduct = async(formData) =>{
 
 export const getAllProducts = async () => {
     try {
-      const response = await fetch('/api/admin/allProducts', {
+      const response = await fetch('https://repartoalegria-backend.onrender.com/api/products/getAll', {
         method: 'GET',
       });
   
@@ -42,7 +42,7 @@ export const getAllProducts = async () => {
 
 export const updateProduct = async(formData)=>{
   try{
-    const response = await fetch('/api/admin/editProducts', {
+    const response = await fetch('https://repartoalegria-backend.onrender.com/api/products/edit', {
       method: 'PUT',
       headers: {
         "content-type" : "application/json",
@@ -60,7 +60,7 @@ export const updateProduct = async(formData)=>{
 
 export const deleteProduct = async(formData)=>{
   try{
-    const response = await fetch('/api/admin/deleteProducts', {
+    const response = await fetch('https://repartoalegria-backend.onrender.com/api/products/delete', {
       method: 'DELETE',
       headers: {
         "content-type" : "application/json",
