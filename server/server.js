@@ -3,10 +3,10 @@ const app = express();
 const cors = require("cors");
 const mercadopago = require("mercadopago");
 const { array } = require("joi");
-import { MercadoPagoConfig } from 'mercadopago';
+const { MercadoPagoConfig } = require('mercadopago');
 const client = new MercadoPagoConfig({ accessToken: 'TEST-1294267515511995-111514-0168c629aa7d6403fa10a566886cd248-401896659', options: { timeout: 5000 } });
-
-const preference = new preference(client);
+const { Preference } = require('mercadopago');
+const preference = new Preference(client);
 // preference.create({ body: {
 // 	items: [
 // 		{

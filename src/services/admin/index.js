@@ -64,7 +64,6 @@ export const deleteProduct = async(formData)=>{
       method: 'DELETE',
       headers: {
         "content-type" : "application/json",
-        // Authorization:`Bearer ${Cookies.get('token')}`
     },
     body: JSON.stringify(formData)
     })

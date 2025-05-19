@@ -1,6 +1,6 @@
 export const login = async(formData) =>{
     try{
-        const response = await fetch('/api/login', {
+        const response = await fetch('https://repartoalegria-backend.onrender.com/api/users/login', {
             method: "POST",
             headers: {
                 "content-type" : "application/json"
