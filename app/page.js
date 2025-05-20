@@ -11,6 +11,7 @@ import CustomToast from "@/src/components/Cart/ToastCart"
 import SkeletonCards from "@/src/components/CommonModal/SkeletonCards"
 import OptionsButtonsProducts from "@/src/components/CommonModal/OptionsButtonsProducts"
 import AbsoluteCartButton from "@/src/components/CommonModal/AbsoluteCartButton"
+import '@/public/css/style.css'
 
 export default function Home() {
 const {products, cart, categorySelected} = useContext(GlobalContext)
@@ -47,7 +48,7 @@ useEffect(()=>{
 
 
   return (
-    <div className="bg-white relative h-full">
+    <div className="bg-white relative h-full text-black">
       <ToastContainer/>
       <p className="h-[10vh] text-center font-bold flex justify-center items-center md:hidden">De la huerta a tu hogar: alimentos con corazón</p>
       <div className={`flex h-[40vh] md:h-[50vh] ${!products?.length && 'items-center'}`}>

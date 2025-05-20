@@ -24,7 +24,7 @@ useEffect(() => {
         <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Inclusive+Sans&family=Rubik&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"></link>
       </head>
-      <body className={`${inter.className} w-screen flex-grow flex flex-col min-h-screen`}>
+      <body className={`${inter.className} w-screen flex-grow flex flex-col min-h-screen text-black`}>
         <GlobalState>
           <Navbar/>
           <main className='flex-grow bg-white pt-[12vh] flex flex-col md:pt-[29vh]'>

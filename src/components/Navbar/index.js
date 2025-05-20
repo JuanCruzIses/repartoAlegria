@@ -98,8 +98,8 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 h-[12vh] md:h-[29vh] lg:absolute">
-                <div className="relative h-[100%] bg-white grid grid-cols-3 grid-flow-row auto-rows-max w-[100vw] flex-wrap items-center justify-between mx-auto md:py-2 border-b border-gray-200 ">
+            <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 h-[12vh] md:h-[29vh] lg:absolute text-black">
+                <div className="relative h-[100%] bg-white grid grid-cols-3 grid-flow-row auto-rows-max w-[100vw] flex-wrap items-center justify-between mx-auto md:py-2 border-b border-gray-200 text-black">
                     <div className="col-span-3 flex items-center cursor-pointer h-[13vh]">
                         <span 
                         className="hidden md:block p-[0.5rem] m-auto text-[20px] font-semibold whitespace-nowrap md:text-2xl spanTitle lg:text-[25px]"
