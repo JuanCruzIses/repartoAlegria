@@ -1,5 +1,8 @@
-*{
-    color: black;
+#identificando{
+    color: black!important;
+}
+#containerPage{
+    color: black!important;
 }
 
 body{
@@ -49,6 +52,7 @@ body{
 .spanTitle{
     font-family: 'Lilita One', sans-serif;
     font-weight: 100;
+    color: black;
 }
 
 .optionButtonsProducts{

@@ -11,7 +11,6 @@ import CustomToast from "@/src/components/Cart/ToastCart"
 import SkeletonCards from "@/src/components/CommonModal/SkeletonCards"
 import OptionsButtonsProducts from "@/src/components/CommonModal/OptionsButtonsProducts"
 import AbsoluteCartButton from "@/src/components/CommonModal/AbsoluteCartButton"
-import '@/public/css/style.css'
 
 export default function Home() {
 const {products, cart, categorySelected} = useContext(GlobalContext)

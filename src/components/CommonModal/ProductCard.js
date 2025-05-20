@@ -45,7 +45,7 @@ export default function ProductCard({product}){
         <div key={product._id} className='text-center grid grid-rows-[150px,45px,40px,30px,30px,30px] gap-1 h-auto mb-2'>
             <img src={product.img} className='h-full object-cover w-full' alt={product.name} ></img>
             <h3 className='max-h-[50px] font-bold items-start pt-[2%] flex justify-center'>{product.name}</h3>
-            <p className='adjustText flex items-start justify-center text-sm'>{product.detail}</p>
+            <p className='text-black adjustText flex items-start justify-center text-sm'>{product.detail}</p>
             <button 
             className='h-full flex items-center justify-center w-45% bg-black text-white text-sm cursor-pointer min-h-[32px] py-1 px-2 md:px-[2%] md:py-[0%] text-grey-900 rounded md:p-0'
             onClick={handleMoreInfoClick}

@@ -68,7 +68,7 @@ function NavItems({ isModalView=false}) {
                 </div>
             </div>
 
-            <ul className={`w-full md:w-[75%] flex justify-around flex-col md:p-0 font-medium rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-white h-full `}>
+            <ul className={`text-black w-full md:w-[75%] flex justify-around flex-col md:p-0 font-medium rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-white h-full `}>
                 {
                 navOptions.map(item =>
                     <Link
